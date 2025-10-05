@@ -1,0 +1,664 @@
+/* Custom CSS for 中東樹棗 Website */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d97706;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b45309;
+}
+
+/* Navigation Enhancements */
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #d97706;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #d97706;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Mobile Menu */
+.mobile-nav-link {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.mobile-nav-link:hover {
+    background-color: #f3f4f6;
+    color: #d97706;
+}
+
+/* Hero Section Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hero h1 {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+#hero p {
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+#hero .flex {
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Section Animation */
+.section-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.section-animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #d97706 0%, #ea580c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, #d97706 0%, #ea580c 100%);
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(217, 119, 6, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    border: 2px solid #d97706;
+    color: #d97706;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #d97706;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Timeline Styles */
+.timeline-item {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease;
+}
+
+.timeline-item.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-item:nth-child(even) {
+    transform: translateX(50px);
+}
+
+.timeline-item.in-view:nth-child(even) {
+    transform: translateX(0);
+}
+
+/* Nutrition Chart Animations */
+.nutrition-bar {
+    background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+    height: 20px;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.nutrition-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Health Benefits Grid */
+.health-card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f3f4f6;
+}
+
+.health-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #d97706;
+}
+
+.health-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+    transition: all 0.3s ease;
+}
+
+.health-card:hover .health-icon {
+    background: linear-gradient(135deg, #d97706 0%, #ea580c 100%);
+    color: white;
+}
+
+/* Cultivation Environment Cards */
+.env-card {
+    background: linear-gradient(135deg, #fef9c3 0%, #fef3c7 50%, #fed7aa 100%);
+    border-radius: 20px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.env-card:hover {
+    border-color: #d97706;
+    transform: scale(1.02);
+}
+
+/* Culture Section Enhancements */
+.culture-quote {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-left: 4px solid #0ea5e9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+    position: relative;
+}
+
+.culture-quote::before {
+    content: '"';
+    font-size: 60px;
+    color: #0ea5e9;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    opacity: 0.3;
+}
+
+/* Footer Enhancements */
+footer {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #d97706, transparent);
+}
+
+/* Back to Top Button */
+#back-to-top {
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#back-to-top.show {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+#back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(217, 119, 6, 0.4);
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #d97706;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    #hero h1 span {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-item {
+        transform: translateY(20px);
+    }
+    
+    .timeline-item.in-view {
+        transform: translateY(0);
+    }
+    
+    .timeline-item:nth-child(even) {
+        transform: translateY(20px);
+    }
+    
+    .timeline-item.in-view:nth-child(even) {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .health-card {
+        padding: 16px;
+    }
+    
+    .env-card {
+        padding: 16px;
+    }
+    
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    nav, footer, #back-to-top {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Focus Styles for Keyboard Navigation */
+a:focus, button:focus, input:focus {
+    outline: 2px solid #d97706;
+    outline-offset: 2px;
+}
+
+/* Text Color Overrides for Better Readability */
+.text-gray-600 {
+    color: #4b5563 !important;
+}
+
+.text-gray-700 {
+    color: #374151 !important;
+}
+
+.text-gray-800 {
+    color: #1f2937 !important;
+}
+
+/* Specific content text improvements */
+.content-text {
+    color: #1f2937 !important;
+}
+
+.description-text {
+    color: #374151 !important;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .bg-gradient-to-br,
+    .bg-gradient-to-r {
+        background: #fff !important;
+        border: 2px solid #000 !important;
+    }
+    
+    .text-gray-600,
+    .text-gray-700,
+    .text-gray-800 {
+        color: #000 !important;
+    }
+}
+
+/* Enhanced text contrast for better readability */
+p, span, li, div {
+    color: #1f2937 !important;
+}
+
+.text-xl, .text-lg {
+    color: #111827 !important;
+}
+
+/* Specific improvements for main content areas */
+section p {
+    color: #111827 !important;
+    font-weight: 500 !important;
+}
+
+/* Card content text - ensure visibility on both light and dark backgrounds */
+.bg-white p, .bg-white span, .bg-white li {
+    color: #111827 !important;
+}
+
+/* Force white background for health cards to ensure readability */
+.health-card, .bg-white {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+}
+
+/* Dark background card text (if any cards have dark backgrounds) */
+[class*="bg-gray-"], [class*="bg-slate-"], [class*="bg-zinc-"] {
+    color: #ffffff !important;
+}
+
+[class*="bg-gray-"] p, [class*="bg-gray-"] span, [class*="bg-gray-"] li,
+[class*="bg-slate-"] p, [class*="bg-slate-"] span, [class*="bg-slate-"] li,
+[class*="bg-zinc-"] p, [class*="bg-zinc-"] span, [class*="bg-zinc-"] li {
+    color: #ffffff !important;
+}
+
+/* Specific override for any dark themed cards */
+.dark-card, .dark-card * {
+    color: #ffffff !important;
+}
+
+/* Ultimate override - force readability for all interactive cards */
+div[class*="p-6"], div[class*="rounded"], div[class*="shadow"] {
+    background-color: #ffffff !important;
+}
+
+div[class*="p-6"] *, div[class*="rounded"] *, div[class*="shadow"] * {
+    color: #111827 !important;
+}
+
+/* Specific fixes for health benefits section */
+#health .bg-white, #health div[class*="shadow"] {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+}
+
+#health .bg-white *, #health div[class*="shadow"] * {
+    color: #111827 !important;
+    font-weight: 600 !important;
+}
+
+/* Make sure list items are always visible */
+li, li *, ul li, ul li * {
+    color: #111827 !important;
+    font-weight: 500 !important;
+}
+
+/* Force visibility for all text elements in cards */
+.text-sm, .font-bold, .text-xl {
+    color: #111827 !important;
+}
+
+/* Mobile-specific fixes for card readability */
+@media (max-width: 768px) {
+    /* Force white background and dark text for all cards on mobile */
+    div[class*="bg-white"], div[class*="shadow"], .health-card {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 2px solid #e5e7eb !important;
+    }
+    
+    /* All text in cards should be black on mobile */
+    div[class*="bg-white"] *, div[class*="shadow"] *, .health-card * {
+        color: #000000 !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Ensure icons are still colorful but text is readable */
+    div[class*="bg-white"] i, div[class*="shadow"] i, .health-card i {
+        color: inherit; /* Keep original icon colors */
+    }
+    
+    /* Make sure list items and descriptions are super visible */
+    div[class*="bg-white"] li, div[class*="shadow"] li, .health-card li,
+    div[class*="bg-white"] p, div[class*="shadow"] p, .health-card p,
+    div[class*="bg-white"] span, div[class*="shadow"] span, .health-card span {
+        color: #000000 !important;
+        font-weight: 700 !important;
+    }
+}
+
+/* Ultra-high contrast mode for problematic cards */
+.ultra-contrast {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 3px solid #374151 !important;
+}
+
+.ultra-contrast * {
+    color: #000000 !important;
+    font-weight: 700 !important;
+}
+
+.ultra-contrast span,
+.ultra-contrast li,
+.ultra-contrast p,
+.ultra-contrast h1,
+.ultra-contrast h2,
+.ultra-contrast h3,
+.ultra-contrast h4,
+.ultra-contrast h5,
+.ultra-contrast h6 {
+    color: #000000 !important;
+    font-weight: 700 !important;
+}
+
+/* Make sure icons keep their colors but text is black */
+.ultra-contrast i {
+    color: inherit !important; /* Keep original icon colors */
+}
+
+/* Timeline and history text */
+.timeline-item p {
+    color: #1f2937 !important;
+    font-weight: 500 !important;
+}
+
+/* Nutrition and health cards */
+.health-card p, .health-card span, .health-card li {
+    color: #111827 !important;
+}
+
+/* Footer text improvements */
+footer p, footer span, footer li {
+    color: #d1d5db !important;
+}
+
+/* Heading improvements */
+h1, h2, h3, h4, h5, h6 {
+    color: #111827 !important;
+    font-weight: 700 !important;
+}
+
+/* Ensure all text elements have good contrast */
+.text-sm {
+    color: #374151 !important;
+    font-weight: 500 !important;
+}
+
+/* Force light theme for better readability - override dark mode completely */
+.bg-white, .health-card, [class*="shadow-lg"], [class*="shadow-xl"] {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+}
+
+/* Ensure all card content is visible */
+.bg-white *, .health-card *, [class*="shadow-lg"] *, [class*="shadow-xl"] * {
+    color: #111827 !important;
+}
+
+/* Override any system dark mode preferences for content areas */
+@media (prefers-color-scheme: dark) {
+    /* Force all content cards to stay white with dark text */
+    .bg-white, .health-card, section div[class*="shadow"], section div[class*="bg-white"] {
+        background-color: #ffffff !important;
+        color: #111827 !important;
+    }
+    
+    /* All text within cards should be dark */
+    .bg-white *, .health-card *, section div[class*="shadow"] *, section div[class*="bg-white"] * {
+        color: #111827 !important;
+    }
+    
+    /* Only allow dark mode for navigation and footer */
+    body {
+        background-color: #f9fafb !important;
+    }
+    
+    /* Keep gradients as they are */
+    [class*="bg-gradient"] {
+        color: #111827 !important;
+    }
+    
+    [class*="bg-gradient"] * {
+        color: #111827 !important;
+    }
+}

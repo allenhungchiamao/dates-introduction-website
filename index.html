@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中東樹棗 | 椰棗 - 沙漠中的甜美寶石</title>
+    <meta name="description" content="深入了解中東樹棗（椰棗）的歷史、營養價值、健康功效和文化意義。探索這個被譽為沙漠甜美寶石的古老果實。">
+    
+    <!-- External Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-seedling text-2xl text-amber-600"></i>
+                    <span class="text-xl font-bold text-black font-bold">中東樹棗</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="nav-link text-gray-900 hover:text-amber-600 transition-colors">首頁</a>
+                    <a href="#about" class="nav-link text-gray-900 hover:text-amber-600 transition-colors">關於樹棗</a>
+                    <a href="#history" class="nav-link text-gray-900 hover:text-amber-600 transition-colors">歷史起源</a>
+                    <a href="#nutrition" class="nav-link text-gray-900 hover:text-amber-600 transition-colors">營養價值</a>
+                    <a href="#health" class="nav-link text-gray-900 hover:text-amber-600 transition-colors">健康功效</a>
+                    <a href="#cultivation" class="nav-link text-gray-900 hover:text-amber-600 transition-colors">種植環境</a>
+                    <a href="#culture" class="nav-link text-gray-900 hover:text-amber-600 transition-colors">文化意義</a>
+                </div>
+                <button class="md:hidden text-gray-900" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#hero" class="mobile-nav-link block px-3 py-2 text-gray-900">首頁</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 text-gray-900">關於樹棗</a>
+                <a href="#history" class="mobile-nav-link block px-3 py-2 text-gray-900">歷史起源</a>
+                <a href="#nutrition" class="mobile-nav-link block px-3 py-2 text-gray-900">營養價值</a>
+                <a href="#health" class="mobile-nav-link block px-3 py-2 text-gray-900">健康功效</a>
+                <a href="#cultivation" class="mobile-nav-link block px-3 py-2 text-gray-900">種植環境</a>
+                <a href="#culture" class="mobile-nav-link block px-3 py-2 text-gray-900">文化意義</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+            <div class="mb-6">
+                <i class="fas fa-seedling text-6xl text-amber-600 mb-4 animate-bounce"></i>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-black font-bold mb-6 leading-tight">
+                中東樹棗
+                <span class="block text-3xl md:text-4xl text-amber-600 font-medium mt-2">沙漠中的甜美寶石</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-900 font-medium mb-8 max-w-3xl mx-auto leading-relaxed">
+                探索這個擁有數千年歷史的古老果實，了解椰棗如何成為中東文化的重要象徵，以及它豐富的營養價值與健康功效
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#about" class="inline-flex items-center px-8 py-3 bg-amber-600 text-white font-medium rounded-full hover:bg-amber-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <i class="fas fa-arrow-down mr-2"></i>
+                    開始探索
+                </a>
+                <a href="#nutrition" class="inline-flex items-center px-8 py-3 bg-white text-amber-600 font-medium rounded-full border-2 border-amber-600 hover:bg-amber-50 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <i class="fas fa-leaf mr-2"></i>
+                    營養成分
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-amber-600"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black font-bold mb-4">什麼是中東樹棗？</h2>
+                <p class="text-xl text-gray-900 font-medium max-w-3xl mx-auto">椰棗樹的果實，被譽為"生命之樹"的珍貴贈禮</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-black font-bold mb-4">基本介紹</h3>
+                        <p class="text-gray-900 font-medium leading-relaxed mb-6">
+                            中東樹棗，學名Phoenix dactylifera，又稱椰棗或海棗，是椰棗樹的果實。這種古老的水果在中東地區已有超過4000年的栽培歷史，被當地人視為"沙漠中的麵包"。
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                                <span class="text-gray-900">科學名稱：Phoenix dactylifera</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                                <span class="text-gray-900">原產地：中東和北非地區</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-amber-600 mt-1 mr-3"></i>
+                                <span class="text-gray-900">主要產地：伊拉克、沙烏地阿拉伯、伊朗</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-amber-100 p-6 rounded-2xl text-center">
+                        <i class="fas fa-calendar-alt text-3xl text-amber-600 mb-3"></i>
+                        <h4 class="font-bold text-black font-bold mb-2">4000+年</h4>
+                        <p class="text-sm text-black font-bold">栽培歷史</p>
+                    </div>
+                    <div class="bg-orange-100 p-6 rounded-2xl text-center">
+                        <i class="fas fa-globe-asia text-3xl text-orange-600 mb-3"></i>
+                        <h4 class="font-bold text-black font-bold mb-2">30+國家</h4>
+                        <p class="text-sm text-black font-bold">主要產區</p>
+                    </div>
+                    <div class="bg-yellow-100 p-6 rounded-2xl text-center">
+                        <i class="fas fa-seedling text-3xl text-yellow-600 mb-3"></i>
+                        <h4 class="font-bold text-black font-bold mb-2">400+品種</h4>
+                        <p class="text-sm text-black font-bold">全球品種</p>
+                    </div>
+                    <div class="bg-red-100 p-6 rounded-2xl text-center">
+                        <i class="fas fa-heart text-3xl text-red-600 mb-3"></i>
+                        <h4 class="font-bold text-black font-bold mb-2">超級食物</h4>
+                        <p class="text-sm text-black font-bold">營養豐富</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black font-bold mb-4">悠久的歷史起源</h2>
+                <p class="text-xl text-black font-bold max-w-3xl mx-auto">從古巴比倫到現代，椰棗見證了人類文明的發展</p>
+            </div>
+
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-amber-300"></div>
+                
+                <div class="relative space-y-12">
+                    <!-- Timeline Item 1 -->
+                    <div class="flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg">
+                                <h3 class="text-xl font-bold text-black font-bold mb-2">西元前4000年</h3>
+                                <p class="text-black font-bold">美索不達米亞地區開始栽培椰棗，成為世界上最早的農作物之一</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-amber-600 border-4 border-white rounded-full shadow-lg z-10"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="w-4 h-4 bg-amber-600 border-4 border-white rounded-full shadow-lg z-10"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg">
+                                <h3 class="text-xl font-bold text-black font-bold mb-2">西元前2000年</h3>
+                                <p class="text-black font-bold">古埃及和古巴比倫文明中，椰棗被視為神聖的食物和貿易商品</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="flex items-center">
+                        <div class="flex-1 pr-8 text-right">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg">
+                                <h3 class="text-xl font-bold text-black font-bold mb-2">西元7世紀</h3>
+                                <p class="text-black font-bold">伊斯蘭教興起，椰棗在宗教文化中獲得特殊地位，成為重要的精神象徵</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-amber-600 border-4 border-white rounded-full shadow-lg z-10"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="w-4 h-4 bg-amber-600 border-4 border-white rounded-full shadow-lg z-10"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg">
+                                <h3 class="text-xl font-bold text-black font-bold mb-2">現代</h3>
+                                <p class="text-black font-bold">全球椰棗產業蓬勃發展，成為健康食品和超級食物的代表</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black font-bold mb-4">豐富的營養價值</h2>
+                <p class="text-xl text-black font-bold max-w-3xl mx-auto">每顆椰棗都是天然的營養寶庫</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-black font-bold mb-6">主要營養成分（每100g）</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-red-50 to-red-100 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-900">熱量</span>
+                                <span class="font-bold text-red-600">277 大卡</span>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-900">碳水化合物</span>
+                                <span class="font-bold text-blue-600">75g</span>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-900">膳食纖維</span>
+                                <span class="font-bold text-green-600">6.7g</span>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-900">蛋白質</span>
+                                <span class="font-bold text-purple-600">1.8g</span>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-900">脂肪</span>
+                                <span class="font-bold text-yellow-600">0.2g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-black font-bold mb-6">重要維生素與礦物質</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gradient-to-br from-orange-50 to-red-50 p-4 rounded-xl text-center">
+                            <i class="fas fa-bolt text-2xl text-orange-600 mb-2"></i>
+                            <h4 class="font-bold text-black font-bold">鉀</h4>
+                            <p class="text-sm text-black font-bold">696mg</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-green-50 to-teal-50 p-4 rounded-xl text-center">
+                            <i class="fas fa-leaf text-2xl text-green-600 mb-2"></i>
+                            <h4 class="font-bold text-black font-bold">銅</h4>
+                            <p class="text-sm text-black font-bold">0.4mg</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-4 rounded-xl text-center">
+                            <i class="fas fa-shield-alt text-2xl text-blue-600 mb-2"></i>
+                            <h4 class="font-bold text-black font-bold">錳</h4>
+                            <p class="text-sm text-black font-bold">0.3mg</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl text-center">
+                            <i class="fas fa-sun text-2xl text-purple-600 mb-2"></i>
+                            <h4 class="font-bold text-black font-bold">維生素B6</h4>
+                            <p class="text-sm text-black font-bold">0.2mg</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-4 rounded-xl text-center">
+                            <i class="fas fa-bone text-2xl text-yellow-600 mb-2"></i>
+                            <h4 class="font-bold text-black font-bold">鎂</h4>
+                            <p class="text-sm text-black font-bold">54mg</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-red-50 to-pink-50 p-4 rounded-xl text-center">
+                            <i class="fas fa-droplet text-2xl text-red-600 mb-2"></i>
+                            <h4 class="font-bold text-black font-bold">鐵</h4>
+                            <p class="text-sm text-black font-bold">0.9mg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-3xl p-8">
+                <h3 class="text-2xl font-bold text-black font-bold mb-4 text-center">特殊營養特點</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <i class="fas fa-clock text-3xl text-amber-600 mb-3"></i>
+                        <h4 class="font-bold text-black font-bold mb-2">快速能量</h4>
+                        <p class="text-black font-bold text-sm">天然果糖提供即時能量補充</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-heart-pulse text-3xl text-red-600 mb-3"></i>
+                        <h4 class="font-bold text-black font-bold mb-2">心血管健康</h4>
+                        <p class="text-black font-bold text-sm">豐富鉀含量有助心臟健康</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-dumbbell text-3xl text-blue-600 mb-3"></i>
+                        <h4 class="font-bold text-black font-bold mb-2">肌肉功能</h4>
+                        <p class="text-black font-bold text-sm">礦物質支持肌肉正常運作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits Section -->
+    <section id="health" class="py-20 bg-gradient-to-br from-green-50 to-teal-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black font-bold mb-4">健康功效</h2>
+                <p class="text-xl text-black font-bold max-w-3xl mx-auto">科學研究證實的多重健康益處</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white ultra-contrast p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-heartbeat text-4xl text-red-500 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black">心血管保護</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">降低膽固醇水平</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">調節血壓</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">預防心臟疾病</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white ultra-contrast p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-brain text-4xl text-purple-500 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black">腦部健康</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">改善認知功能</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">延緩腦部老化</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">提升記憶力</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white ultra-contrast p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-stomach text-4xl text-orange-500 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black">消化系統</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">促進腸道健康</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">改善便秘問題</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">維持消化平衡</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white ultra-contrast p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-bone text-4xl text-blue-500 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black">骨骼健康</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">增強骨密度</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">預防骨質疏鬆</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">支持關節健康</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white ultra-contrast p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-shield-virus text-4xl text-green-500 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black">免疫系統</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">增強免疫力</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">抗氧化保護</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">抗炎作用</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white ultra-contrast p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-battery-full text-4xl text-yellow-500 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black">能量代謝</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">提供持續能量</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">穩定血糖</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2 text-sm"></i>
+                            <span class="text-black font-bold text-sm">支持新陳代謝</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultivation Section -->
+    <section id="cultivation" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black font-bold mb-4">種植環境與條件</h2>
+                <p class="text-xl text-black font-bold max-w-3xl mx-auto">椰棗樹適應極端環境的驚人能力</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-black font-bold mb-6">氣候條件</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-2xl">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-thermometer-half text-2xl text-orange-500 mr-3"></i>
+                                <h4 class="text-lg font-bold text-black font-bold">溫度需求</h4>
+                            </div>
+                            <p class="text-black font-bold mb-3">椰棗樹喜歡炎熱乾燥的氣候，最適溫度為35-40°C</p>
+                            <ul class="text-sm text-black font-bold space-y-1">
+                                <li>• 生長期需要高溫（30-45°C）</li>
+                                <li>• 冬季能耐低溫至-5°C</li>
+                                <li>• 果實成熟期需要乾熱氣候</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-2xl">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-cloud-rain text-2xl text-blue-500 mr-3"></i>
+                                <h4 class="text-lg font-bold text-black font-bold">降雨量</h4>
+                            </div>
+                            <p class="text-black font-bold mb-3">年降雨量100-200mm，需要人工灌溉補充</p>
+                            <ul class="text-sm text-black font-bold space-y-1">
+                                <li>• 根部需要充足水分</li>
+                                <li>• 果實成熟期要避免降雨</li>
+                                <li>• 耐旱能力極強</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-black font-bold mb-6">土壤與地理</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-mountain text-2xl text-green-500 mr-3"></i>
+                                <h4 class="text-lg font-bold text-black font-bold">土壤類型</h4>
+                            </div>
+                            <p class="text-black font-bold mb-3">適應多種土壤類型，包括砂質土和鹽鹼地</p>
+                            <ul class="text-sm text-black font-bold space-y-1">
+                                <li>• pH值6.0-8.0</li>
+                                <li>• 排水良好的土壤</li>
+                                <li>• 耐鹽性極強</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-2xl">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-globe-americas text-2xl text-purple-500 mr-3"></i>
+                                <h4 class="text-lg font-bold text-black font-bold">地理分布</h4>
+                            </div>
+                            <p class="text-black font-bold mb-3">主要分布在中東、北非和部分亞洲地區</p>
+                            <ul class="text-sm text-black font-bold space-y-1">
+                                <li>• 海拔0-1000米</li>
+                                <li>• 緯度15°-35°之間</li>
+                                <li>• 靠近地下水源</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8">
+                <h3 class="text-2xl font-bold text-black font-bold mb-6 text-center">主要產區分布</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center p-4">
+                        <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-flag text-2xl text-amber-600"></i>
+                        </div>
+                        <h4 class="font-bold text-black font-bold mb-2">伊拉克</h4>
+                        <p class="text-sm text-black font-bold">世界最大椰棗產國，年產量約60萬噸</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-crown text-2xl text-green-600"></i>
+                        </div>
+                        <h4 class="font-bold text-black font-bold mb-2">沙烏地阿拉伯</h4>
+                        <p class="text-sm text-black font-bold">高品質椰棗產區，以Medjool品種聞名</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-gem text-2xl text-red-600"></i>
+                        </div>
+                        <h4 class="font-bold text-black font-bold mb-2">伊朗</h4>
+                        <p class="text-sm text-black font-bold">傳統椰棗種植區，品種多樣化</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="py-20 bg-gradient-to-br from-indigo-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black font-bold mb-4">文化意義與象徵</h2>
+                <p class="text-xl text-black font-bold max-w-3xl mx-auto">椰棗在中東文化中的神聖地位</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white ultra-contrast p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-mosque text-4xl text-indigo-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black font-bold">宗教意義</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-black font-bold text-sm leading-relaxed">
+                            在伊斯蘭教中，椰棗被視為神聖的食物。古蘭經中多次提及椰棗，先知穆罕默德也經常食用椰棗。
+                        </p>
+                        <ul class="text-sm text-black font-bold space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-indigo-500 mt-1 mr-2"></i>
+                                <span>開齋節必備食品</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-indigo-500 mt-1 mr-2"></i>
+                                <span>朝聖期間的傳統食物</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-indigo-500 mt-1 mr-2"></i>
+                                <span>齋戒月開齋首選</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white ultra-contrast p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-handshake text-4xl text-purple-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black font-bold">社會象徵</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-black font-bold text-sm leading-relaxed">
+                            椰棗象徵著好客、慷慨和豐饒。在阿拉伯文化中，向客人提供椰棗是最高的敬意表達。
+                        </p>
+                        <ul class="text-sm text-black font-bold space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-purple-500 mt-1 mr-2"></i>
+                                <span>婚禮慶典必備</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-purple-500 mt-1 mr-2"></i>
+                                <span>貴客招待首選</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-purple-500 mt-1 mr-2"></i>
+                                <span>節慶贈禮傳統</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white ultra-contrast p-8 rounded-2xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-seedling text-4xl text-green-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-black font-bold">生命象徵</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-black font-bold text-sm leading-relaxed">
+                            椰棗樹被稱為"生命之樹"，象徵著堅韌、長壽和繁榮。一棵椰棗樹可以結果100年以上。
+                        </p>
+                        <ul class="text-sm text-black font-bold space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-green-500 mt-1 mr-2"></i>
+                                <span>堅韌不拔的精神</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-green-500 mt-1 mr-2"></i>
+                                <span>世代傳承的希望</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-green-500 mt-1 mr-2"></i>
+                                <span>沙漠綠洲的守護者</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white ultra-contrast rounded-3xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-black font-bold mb-6 text-center">文化諺語與傳說</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-black font-bold mb-4">經典諺語</h4>
+                        <div class="space-y-4">
+                            <div class="bg-gradient-to-r from-amber-50 to-orange-50 p-4 rounded-xl">
+                                <p class="text-gray-900 italic mb-2">"椰棗樹的頭在火中，腳在水中"</p>
+                                <p class="text-black font-bold text-sm">形容椰棗樹適應極端環境的能力</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl">
+                                <p class="text-gray-900 italic mb-2">"椰棗是沙漠的麵包"</p>
+                                <p class="text-black font-bold text-sm">強調椰棗的營養價值和重要性</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-black font-bold mb-4">神話傳說</h4>
+                        <div class="space-y-4">
+                            <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-xl">
+                                <p class="text-gray-900 font-medium mb-2">伊甸園傳說</p>
+                                <p class="text-black font-bold text-sm">據說椰棗樹是天堂的植物，被天使帶到人間</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-xl">
+                                <p class="text-gray-900 font-medium mb-2">生命之樹</p>
+                                <p class="text-black font-bold text-sm">古代文明認為椰棗樹連接天地，象徵永恆生命</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-seedling text-2xl text-amber-500"></i>
+                        <span class="text-2xl font-bold">中東樹棗</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        探索中東樹棗的奧秘，了解這個古老果實如何在現代生活中繼續發揮重要作用。從營養健康到文化傳承，椰棗承載著豐富的故事與價值。
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">快速導覽</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">關於樹棗</a></li>
+                        <li><a href="#history" class="text-gray-400 hover:text-white transition-colors">歷史起源</a></li>
+                        <li><a href="#nutrition" class="text-gray-400 hover:text-white transition-colors">營養價值</a></li>
+                        <li><a href="#health" class="text-gray-400 hover:text-white transition-colors">健康功效</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">更多資訊</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#cultivation" class="text-gray-400 hover:text-white transition-colors">種植環境</a></li>
+                        <li><a href="#culture" class="text-gray-400 hover:text-white transition-colors">文化意義</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">購買指南</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">食用方法</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 中東樹棗介紹網站. 版權所有. | 本網站僅供教育與資訊目的
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-amber-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-amber-700 transition-all duration-300 opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
